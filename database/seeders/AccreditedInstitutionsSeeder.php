@@ -1,0 +1,57 @@
+<?php
+
+$accredited_institutions = [
+
+    ["institution_id" => "7", "qualification_id" => "1", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "4", "qualification_id" => "1", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "11", "qualification_id" => "1", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "1", "qualification_id" => "1", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "5", "qualification_id" => "1", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "12", "qualification_id" => "2", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "12", "qualification_id" => "3", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "6", "qualification_id" => "5", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "14", "qualification_id" => "8", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "15", "qualification_id" => "10", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "15", "qualification_id" => "7", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "15", "qualification_id" => "11", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "16", "qualification_id" => "4", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "16", "qualification_id" => "5", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "16", "qualification_id" => "43", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "9", "qualification_id" => "12", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "9", "qualification_id" => "13", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "9", "qualification_id" => "14", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "7", "qualification_id" => "16", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "4", "qualification_id" => "16", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "1", "qualification_id" => "16", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "5", "qualification_id" => "16", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "12", "qualification_id" => "17", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "9", "qualification_id" => "19", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "10", "qualification_id" => "20", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "10", "qualification_id" => "21", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "12", "qualification_id" => "22", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "8", "qualification_id" => "23", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "12", "qualification_id" => "24", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "8", "qualification_id" => "25", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "12", "qualification_id" => "26", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "16", "qualification_id" => "27", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "16", "qualification_id" => "28", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "6", "qualification_id" => "30", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "6", "qualification_id" => "31", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "13", "qualification_id" => "30", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "2", "qualification_id" => "32", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "12", "qualification_id" => "33", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "12", "qualification_id" => "34", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "12", "qualification_id" => "35", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "10", "qualification_id" => "36", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "10", "qualification_id" => "37", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "10", "qualification_id" => "38", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "18", "qualification_id" => "39", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "3", "qualification_id" => "40", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "3", "qualification_id" => "41", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "18", "qualification_id" => "41", "created_at" => now(), "updated_at" => now()],
+    ["institution_id" => "10", "qualification_id" => "42", "created_at" => now(), "updated_at" => now()]
+
+];
+
+
+return $accredited_institutions;
