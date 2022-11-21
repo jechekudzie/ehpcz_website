@@ -16,4 +16,9 @@ class ComplianceStatus extends Model
         return $this->hasMany(PractitionerProfession::class);
     }
 
+    public function subscriptions()
+    {
+        return $this->hasMany(Subscription::class);
+    }
+
 }

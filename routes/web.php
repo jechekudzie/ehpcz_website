@@ -92,6 +92,9 @@ Route::get('/mail-contact', [WebsiteController::class, 'emailContactForm']);
 | Practitioners Routes
 |--------------------------------------------------------------------------
 */
+Route::get('/practitioners/choose', [PractitionersController::class, 'choose']);
+Route::get('/practitioners/choose/{type}', [PractitionersController::class, 'choose_type']);
+
 Route::resource('/practitioners', 'Practitioner\PractitionersController');
 
 //Now add practitioner employment(s)
@@ -128,7 +131,6 @@ Route::get('/practitioners/profession_register_categories/{practitionerProfessio
 Route::patch('/practitioners/profession_register_categories/{practitionerProfessionRegister}/update', [PractitionerProfessionRegisterController::class, 'update']);
 Route::patch('/practitioners/profession_register_categories/{practitionerProfessionRegister}/destroy', [PractitionerProfessionRegisterController::class, 'update']);
 
-
 //Now add profession qualifications
 Route::post('/practitioners/qualifications/{practitionerProfession}/store', [PractitionerProfessionQualificationController::class, 'store']);
 
@@ -143,10 +145,15 @@ Route::get('/practitioners/applications/{practitionerApplication}/renewal', [Pra
 Route::get('/practitioners/applications/{practitionerApplication}/registration_checkout', [PaymentsController::class, 'registration_checkout']);
 Route::post('/practitioners/applications/{practitionerApplication}/payment', [PaymentsController::class, 'payment']);
 Route::get('/practitioners/applications/{practitionerApplication}/check_payment', [PaymentsController::class, 'check_payment']);
+
+//practitioner_payments
+Route::get('/practitioners/payments/{practitioner}/application_invoice', [PaymentsController::class, 'application_invoice']);
+Route::post('/practitioners/payments/{practitioner}/application_invoice_confirm', [PaymentsController::class, 'application_invoice_confirm']);
+Route::post('/practitioners/payments/{practitioner}/submit_payment', [PaymentsController::class, 'submit_payment']);
+
 Route::get('/practitioners/payments/{practitioner}/index', [PaymentsController::class, 'index']);
 
 Route::get('/practitioners/certificates/{id}', [PractitionersController::class, 'getPractitionerCertificate']);
-
 
 Route::get('/message/create', [PractitionersController::class, 'message_create']);
 Route::post('/message/store', [PractitionersController::class, 'message_store']);

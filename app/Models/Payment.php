@@ -35,4 +35,11 @@ class Payment extends Model
     {
         return $this->belongsTo(ApplicationStatus::class);
     }
+
+    //today
+
+    public function subscription()
+    {
+        return $this->belongsTo(Subscription::class);
+    }
 }

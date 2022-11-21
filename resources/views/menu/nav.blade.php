@@ -618,6 +618,10 @@
                             </li>
 
                             <li class="nav-item">
+                                <a href="{{url('/practitioners/choose')}}" class="nav-link"  role="button" aria-expanded="false" aria-controls="sidebarSignIn" data-key="t-signin"> Add Practitioner</a>
+                            </li>
+
+                            <li class="nav-item">
                                 <a href="{{url('/practitioners/create')}}" class="nav-link"  role="button" aria-expanded="false" aria-controls="sidebarSignIn" data-key="t-signin"> Add Practitioner</a>
                             </li>
 

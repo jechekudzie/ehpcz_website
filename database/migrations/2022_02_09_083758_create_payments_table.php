@@ -15,16 +15,17 @@ class CreatePaymentsTable extends Migration
     {
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
+            $table->string('period');
+            $table->unsignedBigInteger('subscription_id');
             $table->unsignedBigInteger('practitioner_id');
             $table->unsignedBigInteger('application_category_id')->nullable();
             $table->unsignedBigInteger('application_id')->nullable();
-            $table->string('reference')->nullable();
-            $table->string('year');
             $table->double('amount_invoiced',8,2)->default(0);
             $table->double('amount_paid',8,2)->default(0);
             $table->double('balance',8,2)->default(0);
-            $table->unsignedBigInteger('payment_channel_id');
-            $table->unsignedBigInteger('payment_method_id');
+            $table->unsignedBigInteger('payment_channel_id')->nullable();
+            $table->unsignedBigInteger('payment_method_id')->nullable();
+            $table->unsignedBigInteger('payment_status_id')->nullable();
             $table->string('currency')->nullable();
             $table->string('rate')->nullable();
             $table->timestamp('date_of_payment')->nullable();

@@ -66,21 +66,26 @@ class Practitioner extends Model
         return $this->hasMany(PractitionerApplication::class);
     }
 
+    public function subscriptions()
+    {
+        return $this->hasMany(Subscription::class);
+    }
+
 
     //ADDS START HERE
     public function add_practitioner_profession($profession)
     {
-         return $this->practitioner_professions()->create($profession);
+        return $this->practitioner_professions()->create($profession);
     }
 
     public function add_practitioner_requirements($requirement)
     {
-         return $this->practitioner_requirements()->create($requirement);
+        return $this->practitioner_requirements()->create($requirement);
     }
 
     public function add_contact($contact)
     {
-         return $this->practitioner_contact()->create($contact);
+        return $this->practitioner_contact()->create($contact);
     }
 
     public function add_employment($employment)

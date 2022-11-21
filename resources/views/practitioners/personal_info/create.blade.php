@@ -78,7 +78,7 @@
                                                         <span class="step-title me-2">
                                                             <i class="ri-close-circle-fill step-icon me-2"></i> Step 3
                                                         </span>
-                                        Employment Info
+                                        Profession Info
                                     </button>
                                 </div>
                                 <!-- end nav -->
@@ -154,7 +154,7 @@
 
                                                             <div class="col-sm-6">
                                                                 <label for="identification" class="form-label">Identification (Passport Number/ID Number)</label>
-                                                                <input type="text" class="form-control" id="identification" name="identification" value="{{old('identification')}}" placeholder="Enter your identification/passport number">
+                                                                <input type="text" class="form-control" id="identification" name="identification" value="43173039Q47" placeholder="Enter your identification/passport number" readonly>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -234,38 +234,22 @@
                                                 <!-- end tab pane -->
                                                 <div class="tab-pane fade" id="v-pills-payment" role="tabpanel" aria-labelledby="v-pills-payment-tab">
                                                     <div>
-                                                        <h5>Employment History</h5>
-                                                        <p class="text-muted">Please enter your current/last employment</p>
+                                                        <h5>Profession info</h5>
+                                                        <p class="text-muted">Please select a profession you are studying for or you want to register for.</p>
                                                     </div>
 
                                                     <div>
-                                                        <div class="row g-3">
-                                                            <div class="col-sm-6">
-                                                                <label for="company" class="form-label">Company</label>
-                                                                <input type="text" class="form-control" id="company" name="company" placeholder="Enter the company name" value="{{old('company')}}">
-                                                            </div>
-
-                                                            <div class="col-sm-6">
-                                                                <label for="contact_person" class="form-label">Contact Person</label>
-                                                                <input type="text" class="form-control" id="contact_person" name="contact_person" placeholder="Enter company contact person" value="{{old('contact_person')}}">
-                                                            </div>
-
-                                                            <div class="col-sm-6">
-                                                                <label for="company_address" class="form-label">Company Address</label>
-                                                                <input type="text" class="form-control" id="company_address" name="company_address" placeholder="Enter company address" value="{{old('company_address')}}">
-                                                            </div>
-
-                                                            <div class="col-sm-6">
-                                                                <label for="company_phone" class="form-label">Company Phone</label>
-                                                                <input type="tel" class="form-control" id="company_phone" name="company_phone" placeholder="Enter company phone number" value="{{old('company_phone')}}">
-                                                            </div>
-
-                                                            <div class="col-sm-6">
-                                                                <label for="company_email" class="form-label">Company Email</label>
-                                                                <input type="email" class="form-control" id="company_email" name="company_email" placeholder="Enter company email address" value="{{old('company_email')}}">
-                                                            </div>
+                                                        <div class="col-sm-6">
+                                                            <label for="mobile" class="form-label">Profession</label>
+                                                            <select class="form-control js-example-basic-single" name="profession_id" id="profession_id" required>
+                                                                <option value="">Select Profession</option>
+                                                                @if ($professions)
+                                                                    @foreach($professions as $profession)
+                                                                        <option value="{{ $profession->id }}" {{old('profession_id') == $profession->id ? 'selected' : '' }} >{{ $profession->name }} </option>
+                                                                    @endforeach
+                                                                @endif
+                                                            </select>
                                                         </div>
-
                                                     </div>
 
                                                     <div class="d-flex align-items-start gap-3 mt-4">

@@ -44,6 +44,14 @@
                     @if($errors->any())
                         @include('errors')
                     @endif
+                    @if (session('message'))
+                        <div class="alert alert-primary dark alert-dismissible fade show" role="alert">
+                            <strong>Message
+                                ! </strong> {{session('message')}}
+                            <button class="btn-close" type="button" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                        </div>
+                    @endif
                     <div class="row">
                         <div class="col-xxl-12">
                             <div class="card">

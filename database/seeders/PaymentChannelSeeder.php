@@ -13,16 +13,10 @@ $payment_channels = [
         'updated_at'=>now()
     ],
     [
-        'name'=>'CBZ Bank',
+        'name'=>'Transfer',
         'created_at'=>now(),
         'updated_at'=>now()
     ],
-
-    [
-        'name'=>'Standard Chattered Bank',
-        'created_at'=>now(),
-        'updated_at'=>now()
-    ]
 
 ];
 return $payment_channels;

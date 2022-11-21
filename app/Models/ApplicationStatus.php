@@ -17,7 +17,6 @@ class ApplicationStatus extends Model
         return $this->hasMany(PractitionerProfession::class);
     }
 
-
     public function practitioner_profession_qualifications()
     {
         return $this->hasMany(PractitionerProfessionQualification::class);
@@ -31,6 +30,11 @@ class ApplicationStatus extends Model
     public function payments()
     {
         return $this->hasMany(Payment::class);
+    }
+
+    public function subscriptions()
+    {
+        return $this->hasMany(Subscription::class);
     }
 
 }

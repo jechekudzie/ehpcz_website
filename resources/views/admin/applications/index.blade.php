@@ -46,6 +46,7 @@
                                 <table class="display" id="basic-1">
                                     <thead>
                                     <tr>
+                                        <th>Id</th>
                                         <th>Application</th>
                                         <th>Fee</th>
                                         <th>Requirements</th>
@@ -56,6 +57,7 @@
                                     <tbody>
                                     @foreach($applicationCategory->applications as $application)
                                         <tr>
+                                            <td>{{$application->id}}</td>
                                             <td>{{$application->name}}</td>
                                             <td>{{$application->fee}}</td>
                                             <td><a href="{{url('/admin/application_requirements/'
