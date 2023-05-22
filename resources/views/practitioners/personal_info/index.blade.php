@@ -32,7 +32,6 @@
 @stop
 
 @section('content')
-
     <div class="row">
         <div class="col-lg-12">
             <div class="card" id="tasksList">
@@ -40,7 +39,7 @@
                     <div class="d-flex align-items-center">
                         <h5 class="card-title mb-0 flex-grow-1">All Practitioners</h5>
                         <div class="flex-shrink-0">
-                            <a href="{{url('/practitioners/create')}}" class="btn btn-soft-danger">Add new practitioner</a>
+                            <a href="{{url('/practitioners/choose')}}" class="btn btn-soft-danger">Add new practitioner</a>
                         </div>
                     </div>
                 </div>

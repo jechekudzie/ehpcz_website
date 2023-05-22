@@ -1,11 +1,3 @@
-<?php
-/**
- * Project: council_system
- * User: user
- * Date: 27/07/2022
- * Time: 17:13
- */
-?>
 
 @extends('layouts.practitioners')
 
@@ -37,7 +29,7 @@
 
     @if($errors->any())
         @include('errors')
-    @endif
+
     <div class="row">
         <div class="col-xl-12">
             <div class="card">
@@ -135,7 +127,8 @@
 
                                                             <div class="col-sm-6">
                                                                 <label for="dob" class="form-label">Date of Birth</label>
-                                                                <input type="text" class="form-control flatpickr-input active" id="dob" name="dob" data-provider="flatpickr" data-date-format="Y-d-m" value="{{old('dob')}}" required>
+                                                                <input type="text" class="form-control flatpickr-input active" id="dob" name="dob"
+                                                                       data-provider="flatpickr" data-date-format="Y-d-m" value="{{old('dob')}}" required>
                                                             </div>
 
 

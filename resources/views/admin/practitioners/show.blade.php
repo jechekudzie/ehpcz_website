@@ -370,8 +370,7 @@
                                                                             <span
                                                                                 class="badge badge-primary
                                                                                 pull-right">Pending approval</span>
-                                                                                <h5>{{$practitioner_qualification->accredited_institution->professional_qualification->name
-}}</h5>
+                                                                                <h5>{{$practitioner_qualification->accredited_institution->professional_qualification->name}}</h5>
                                                                                 <p style="color: black;">
 
                                                                                     {{date("d F Y", strtotime
